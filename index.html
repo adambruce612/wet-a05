@@ -5,11 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Technology Demo</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="prism.css">
 </head>
 
 <body>
-
+    <div class="wrapper">
+        <h1>Dynamic CSS Masks</h1>
+        <h2>Who</h2>
+        <p>This tutorial was created by <a href="https://tympanus.net/codrops/author/michellebarker/">Michelle
+                Barker.</a>
+        </p>
+        <h2>Where</h2>
+        <p>This tutorial was found on the <a
+                href="https://tympanus.net/codrops/2021/05/04/dynamic-css-masks-with-custom-properties-and-gsap/">Codrops</a>
+            site.</p>
+        <h2>When</h2>
+        <p>The turtorial was created on May 4, 2021.</p>
+        <h2>What</h2>
+        <p>This tutorial teaches how to animate CSS masks based on the position of the cursor by implementing GSAP and
+            custom properties.</p>
+        <h2>Why</h2>
+        <p>The concept is interesting because it enables developers to have an eye-catching way to interact with user
+            events.</p>
+        <video src="files/video.mp4" autoplay muted controls loop></video>
+        <div class="buttons">
+            <a id="demo" href="demo.html">Demo</a>
+            <a id="code" href="files/DynamicMaskSourceCode.zip" download="files/DynamicMaskSourceCode.zip">Download</a>
+        </div>
+        <h2>HTML</h2>
+        <p>The HTML is very simple and straightfoward. To create the effect the content is duplicated. For accessibility
+            the second component is set to: aria-hidden="true" to be screen reader friendly.</p>
+        <pre data-src="demo.html"></pre>
+        <h2>CSS</h2>
+        <p>The CSS for this effect contains a couple of different text effects. First, the text-color and background are
+            intentionally set to a high contrast. The drop-shadow filter is also used to create an effect that looks
+            like glowing.</p>
+        <pre data-src="css/demo.css"></pre>
+        <h2>JavaScript</h2>
+        <p>The JavaScript for this demo supplies two main things regarding functionality. 1: It is used to set default
+            values and, 2, to listen to the mousemove event and updated the mask based on mouse movement.</p>
+        <pre data-src="script.js"></pre>
+        <footer>
+            <p> <a href="../../../index.html">&copy; 2021 Adam</a> <a
+                    href="javascript:void(location='https://jigsaw.w3.org/css-validator/validator?uri='+escape(location))">CSS
+                    Validator</a> <a
+                    href="javascript:void(location='https://validator.w3.org/nu/?doc='+escape(location))">HTML
+                    Validator</a> </p>
+        </footer>
+    </div>
+    <script src="prism.js"></script>
 </body>
 
 </html>
